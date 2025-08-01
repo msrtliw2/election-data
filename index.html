@@ -6,13 +6,16 @@
   <title>election data</title>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       background-color: #708090;
       font-family: 'Source Code Pro', monospace;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-start;
       text-align: center;
       padding: 40px 20px;
       min-height: 100vh;
@@ -20,7 +23,7 @@
 
     h1 {
       font-size: 3rem;
-      color: #F0EAD6;
+      color: #f0ead6;
       margin-bottom: 1rem;
     }
 
@@ -45,7 +48,7 @@
       padding: 20px 30px;
       font-size: 1rem;
       text-decoration: none;
-      color: #F0EAD6;
+      color: #f0ead6;
       transition: all 0.2s ease-in-out;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
     }
@@ -55,9 +58,24 @@
       background-color: #e8e8e8;
     }
 
+    .section {
+      max-width: 700px;
+      margin: 80px auto 40px;
+      text-align: left;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .section h2 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
     .footer {
       font-size: 0.9rem;
       color: #555;
+      margin-top: 60px;
     }
 
     .footer a {
@@ -78,17 +96,45 @@
         padding: 15px 20px;
         font-size: 0.95rem;
       }
+
+      .section {
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
 <body>
   <h1>[election data]</h1>
-  <p class="tagline">Always on, Always collecting, Always predicting. AI-powered tools for your election.</p>
+  <p class="tagline">Smarter data. Smarter democracy.</p>
 
   <div class="box-container">
-    <a href="mailto:hello@election-data.io?subject=Predictive Modelling Inquiry" class="box">[predictive modelling]</a>
-    <a href="mailto:hello@election-data.io?subject=Synthetic Data Inquiry" class="box">[synthetic data]</a>
-    <a href="mailto:hello@election-data.io?subject=Conversational Polling Inquiry" class="box">[conversational polling]</a>
+    <a href="#predictive" class="box">[predictive modelling]</a>
+    <a href="#synthetic" class="box">[synthetic data]</a>
+    <a href="#polling" class="box">[conversational polling]</a>
+  </div>
+
+  <div id="predictive" class="section">
+    <h2>[predictive modelling]</h2>
+    <p>
+      Using machine learning algorithms to forecast electoral outcomes, voter behavior, and issue salience—
+      built on real-time data streams and historical trends.
+    </p>
+  </div>
+
+  <div id="synthetic" class="section">
+    <h2>[synthetic data]</h2>
+    <p>
+      Generating realistic, anonymized election datasets for model training and testing. Our synthetic data
+      preserves statistical integrity without compromising privacy.
+    </p>
+  </div>
+
+  <div id="polling" class="section">
+    <h2>[conversational polling]</h2>
+    <p>
+      Using AI-powered chat interfaces to conduct dynamic, adaptive surveys. Conversational polling improves
+      engagement and gives richer insight into voter sentiment.
+    </p>
   </div>
 
   <p class="footer">
@@ -96,3 +142,4 @@
   </p>
 </body>
 </html>
+
