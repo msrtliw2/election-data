@@ -11,46 +11,54 @@
     }
 
     body {
-      background-color: #708090;
+      background-color: #f5f5f5;
       font-family: 'Source Code Pro', monospace;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background-color: #f5f5f5;
+      z-index: 1000;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      padding: 40px 20px;
-      min-height: 100vh;
+      padding: 20px 20px 30px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     }
 
     h1 {
-      font-size: 3rem;
-      color: #f0ead6;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      color: #222;
+      margin: 0 0 0.5rem 0;
     }
 
     .tagline {
-      font-size: 1.2rem;
-      color: #4a4a4a;
-      margin-bottom: 2.5rem;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 1.5rem;
     }
 
     .box-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 15px;
       justify-content: center;
-      margin-bottom: 3rem;
     }
 
     .box {
-      background-color: #4a4a4a;
-      border: 2px solid #4a4a4a;
+      background-color: #fff;
+      border: 2px solid #ccc;
       border-radius: 8px;
-      padding: 20px 30px;
+      padding: 12px 20px;
       font-size: 1rem;
       text-decoration: none;
-      color: #f0ead6;
+      color: #222;
       transition: all 0.2s ease-in-out;
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.04);
     }
 
     .box:hover {
@@ -61,6 +69,7 @@
     .section {
       max-width: 700px;
       margin: 80px auto 40px;
+      padding: 0 20px;
       text-align: left;
       font-size: 1rem;
       color: #333;
@@ -75,7 +84,8 @@
     .footer {
       font-size: 0.9rem;
       color: #555;
-      margin-top: 60px;
+      text-align: center;
+      margin: 80px 0 40px;
     }
 
     .footer a {
@@ -93,24 +103,26 @@
       }
 
       .box {
-        padding: 15px 20px;
         font-size: 0.95rem;
+        padding: 10px 16px;
       }
 
       .section {
-        padding: 0 10px;
+        padding: 0 12px;
       }
     }
   </style>
 </head>
 <body>
-  <h1>[election data]</h1>
-  <p class="tagline">Smarter data. Smarter democracy.</p>
 
-  <div class="box-container">
-    <a href="#predictive" class="box">[predictive modelling]</a>
-    <a href="#synthetic" class="box">[synthetic data]</a>
-    <a href="#polling" class="box">[conversational polling]</a>
+  <div class="header">
+    <h1>[election data]</h1>
+    <p class="tagline">Smarter data. Smarter democracy.</p>
+    <div class="box-container">
+      <a href="#predictive" class="box">[predictive modelling]</a>
+      <a href="#synthetic" class="box">[synthetic data]</a>
+      <a href="#polling" class="box">[conversational polling]</a>
+    </div>
   </div>
 
   <div id="predictive" class="section">
@@ -140,6 +152,8 @@
   <p class="footer">
     General inquiries: <a href="mailto:hello@election-data.io">hello@election-data.io</a>
   </p>
+
 </body>
 </html>
+
 
