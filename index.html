@@ -66,6 +66,10 @@
       background-color: #e8e8e8;
     }
 
+    .anchor-offset {
+      scroll-margin-top: 150px; /* prevents content being hidden under sticky header */
+    }
+
     .section {
       max-width: 700px;
       margin: 80px auto 40px;
@@ -125,7 +129,7 @@
     </div>
   </div>
 
-  <div id="predictive" class="section">
+  <div id="predictive" class="section anchor-offset">
     <h2>[predictive modelling]</h2>
     <p>
       Using machine learning algorithms to forecast electoral outcomes, voter behavior, and issue salience—
@@ -133,7 +137,7 @@
     </p>
   </div>
 
-  <div id="synthetic" class="section">
+  <div id="synthetic" class="section anchor-offset">
     <h2>[synthetic data]</h2>
     <p>
       Generating realistic, anonymized election datasets for model training and testing. Our synthetic data
@@ -141,7 +145,7 @@
     </p>
   </div>
 
-  <div id="polling" class="section">
+  <div id="polling" class="section anchor-offset">
     <h2>[conversational polling]</h2>
     <p>
       Using AI-powered chat interfaces to conduct dynamic, adaptive surveys. Conversational polling improves
@@ -155,5 +159,6 @@
 
 </body>
 </html>
+
 
 
