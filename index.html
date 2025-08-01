@@ -11,7 +11,7 @@
     }
 
     body {
-      background-color: #f5f5f5;
+      background-color: #708090;
       font-family: 'Source Code Pro', monospace;
       margin: 0;
       padding: 0;
@@ -32,13 +32,13 @@
 
     h1 {
       font-size: 2.5rem;
-      color: #222;
+      color: #f0ead6;
       margin: 0 0 0.5rem 0;
     }
 
     .tagline {
       font-size: 1.1rem;
-      color: #555;
+      color: #4a4a4a;
       margin-bottom: 1.5rem;
     }
 
@@ -50,13 +50,13 @@
     }
 
     .box {
-      background-color: #fff;
-      border: 2px solid #ccc;
+      background-color: #4a4a4a;
+      border: 2px solid #4a4a4a;
       border-radius: 8px;
       padding: 12px 20px;
       font-size: 1rem;
       text-decoration: none;
-      color: #222;
+      color: #f0ead6;
       transition: all 0.2s ease-in-out;
       box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.04);
     }
@@ -66,8 +66,10 @@
       background-color: #e8e8e8;
     }
 
-    .anchor-offset {
-      scroll-margin-top: 150px; /* prevents content being hidden under sticky header */
+    .spacer {
+      height: 140px; /* height of sticky header */
+      margin-top: -140px;
+      visibility: hidden;
     }
 
     .section {
@@ -121,7 +123,7 @@
 
   <div class="header">
     <h1>[election data]</h1>
-    <p class="tagline">Smarter data. Smarter democracy.</p>
+    <p class="tagline">Always on, Always collecting, Always predicting</p>
     <div class="box-container">
       <a href="#predictive" class="box">[predictive modelling]</a>
       <a href="#synthetic" class="box">[synthetic data]</a>
@@ -129,7 +131,8 @@
     </div>
   </div>
 
-  <div id="predictive" class="section anchor-offset">
+  <div id="predictive" class="spacer"></div>
+  <div class="section">
     <h2>[predictive modelling]</h2>
     <p>
       Using machine learning algorithms to forecast electoral outcomes, voter behavior, and issue salience—
@@ -137,7 +140,8 @@
     </p>
   </div>
 
-  <div id="synthetic" class="section anchor-offset">
+  <div id="synthetic" class="spacer"></div>
+  <div class="section">
     <h2>[synthetic data]</h2>
     <p>
       Generating realistic, anonymized election datasets for model training and testing. Our synthetic data
@@ -145,7 +149,8 @@
     </p>
   </div>
 
-  <div id="polling" class="section anchor-offset">
+  <div id="polling" class="spacer"></div>
+  <div class="section">
     <h2>[conversational polling]</h2>
     <p>
       Using AI-powered chat interfaces to conduct dynamic, adaptive surveys. Conversational polling improves
@@ -159,6 +164,7 @@
 
 </body>
 </html>
+
 
 
 
