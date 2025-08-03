@@ -3,131 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>election data</title>
+  <title>election data – AI insights</title>
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
-      scroll-padding-top: 286px; /* accounts for sticky header */
+      scroll-padding-top: 286px;
     }
-
     body {
-      background-color: #708090;
+      background-color: #f5f3ee;
+      color: #1b1f24;
       font-family: 'Source Code Pro', monospace;
       margin: 0;
       padding: 0;
     }
-
     .header {
-      position: sticky;
-      top: 0;
-      background-color: #708090;
-      z-index: 1000;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      position: sticky; top: 0;
+      background-color: #f5f3ee;
+      padding: 20px;
       text-align: center;
-      padding: 20px 20px 0px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      z-index: 100;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.06);
     }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #f0ead6;
-      margin: 0 0 0.5rem 0;
-    }
-
+    h1 { font-size: 2.5rem; text-transform: uppercase; color: #000; margin: 0; }
     .tagline {
+      margin: 8px 0 24px;
       font-size: 1.1rem;
-      color: #dcdcdc;
-      margin-bottom: 1.5rem;
+      color: #555;
+      letter-spacing: 1px;
     }
-
-    .box-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-      margin-bottom: 10px;
-    }
-
+    .box-container { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
     .box {
-      background-color: #4a4a4a;
-      border: 2px solid #4a4a4a;
-      border-radius: 8px;
-      padding: 12px 20px;
-      font-size: 1rem;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 14px 24px;
       text-decoration: none;
-      color: #f0ead6;
-      transition: all 0.2s ease-in-out;
-      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.04);
+      color: #1b1f24;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: 0.2s;
     }
-
     .box:hover {
-      border-color: #000;
-      background-color: #f0ead6;
-      color: #4a4a4a;
+      background-color: #eae5e0;
+      cursor: pointer;
     }
-
     .contact-inline {
-      margin-top: 10px;
-      font-size: 0.9rem;
-      color: #ccc;
-    }
-
-    .contact-inline a {
-      color: #f0ead6;
-      text-decoration: none;
-    }
-
-    .contact-inline a:hover {
-      text-decoration: underline;
-    }
-
-    .section {
-      max-width: 700px;
-      margin: 40px auto 20px;
-      padding: 0 20px;
-      text-align: left;
-      font-size: 1rem;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    .section h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .footer {
       font-size: 0.9rem;
       color: #555;
-      text-align: center;
-      margin: 80px 0 40px;
     }
-
-    .footer a {
-      color: #222;
-      text-decoration: none;
+    .section {
+      max-width: 680px;
+      padding: 80px 20px;
+      margin: 0 auto;
+      border-top: 2px solid #ddd;
     }
-
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 2rem;
-      }
-
-      .tagline {
-        font-size: 1rem;
-      }
-
-      .box {
-        font-size: 0.95rem;
-        padding: 10px 16px;
-      }
-
-      .section {
-        padding: 0 12px;
-      }
+    .section h2 {
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      color: #000;
+    }
+    .section p {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #333;
     }
   </style>
 </head>
@@ -149,24 +90,22 @@
   <div id="predictive" class="section">
     <h2>[predictive modelling]</h2>
     <p>
-      We always have polling in the field. Using machine learning algorithms to forecast electoral outcomes, voter behavior, and issue salience—
-      built on real-time data streams and historical trends. We don't just want a cross-sectional predictive model. We keep it continually updated.
+      Using machine learning algorithms to forecast electoral outcomes, voter behavior, and issue salience—
+      powered by real-time data and historical trends. Always-on forecasts that update with the pulse of democracy.
     </p>
   </div>
 
   <div id="synthetic" class="section">
     <h2>[synthetic data]</h2>
     <p>
-      Generating realistic, anonymized election datasets for model training and testing. Our synthetic data
-      preserves statistical integrity without compromising privacy. 
+      Generating anonymized synthetic election datasets that retain statistical meaning—but never compromise real privacy.
     </p>
   </div>
 
   <div id="polling" class="section">
     <h2>[conversational polling]</h2>
     <p>
-      Using AI-powered chat interfaces to conduct dynamic, adaptive surveys. Conversational polling improves
-      engagement and gives richer insight into voter sentiment.
+      Adaptive, natural-language polling powered by AI. Conversational surveys that respect your time—and never demand a checkbox.
     </p>
   </div>
 
